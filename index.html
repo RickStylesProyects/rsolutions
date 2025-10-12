@@ -21,18 +21,22 @@
         .custom-btn {
             background-color: #3498db;
             border-color: #3498db;
+            color: white;
         }
         .custom-btn:hover {
             background-color: #2980b9;
             border-color: #2980b9;
+            color: white;
         }
         .custom-btn.bordered {
-            color: #3498db;
-            border-color: #3498db;
+            color: white;
+            border-color: white;
+            background-color: transparent;
         }
         .custom-btn.bordered:hover {
-            background-color: #3498db;
-            color: white;
+            background-color: white;
+            border-color: white;
+            color: #3498db;
         }
         .bg-color {
             background-color: #3498db !important;
@@ -43,14 +47,18 @@
         .class-price {
             background-color: #3498db;
             color: white;
-            padding: 5px 10px;
+            padding: 8px 15px;
             border-radius: 4px;
             font-weight: bold;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
+            font-size: 1.1rem;
         }
         .class-info {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         .class-thumb {
             border-radius: 8px;
@@ -58,6 +66,9 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin-bottom: 30px;
             transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .class-thumb:hover {
             transform: translateY(-5px);
@@ -67,11 +78,20 @@
             height: 200px;
             object-fit: cover;
         }
+        .service-description {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
         .site-footer {
             background-color: #2c3e50;
         }
         .navbar {
             background-color: rgba(44, 62, 80, 0.9);
+        }
+        .service-specialist {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
         }
      </style>
 </head>
@@ -227,8 +247,8 @@
                         <img src="images/class/yoga-class.jpg" class="img-fluid" alt="Mantenimiento">
                         <div class="class-info">
                             <h3 class="mb-1">Mantenimiento</h3>
-                            <span><strong>Especialista</strong> - Erick Portillo</span>
-                            <p class="mt-3">Mantenimiento preventivo y correctivo para equipos de cómputo. Limpieza interna, actualizaciones y optimización del sistema.</p>
+                            <p class="service-specialist"><strong>Especialista:</strong> Erick Portillo</p>
+                            <p class="service-description">Mantenimiento preventivo y correctivo para equipos de cómputo. Limpieza interna, actualizaciones y optimización del sistema. Garantizamos el funcionamiento óptimo de tu equipo.</p>
                             <span class="class-price">Desde $15</span>
                         </div>
                     </div>
@@ -239,8 +259,8 @@
                         <img src="images/class/crossfit-class.jpg" class="img-fluid" alt="Ensamblaje">
                         <div class="class-info">
                             <h3 class="mb-1">Ensamblaje</h3>
-                            <span><strong>Especialista</strong> - Mateo Capelo</span>
-                            <p class="mt-3">Ensamblaje personalizado de computadoras según tus necesidades. Equipos gaming, oficina o trabajo especializado.</p>
+                            <p class="service-specialist"><strong>Especialista:</strong> Mateo Capelo</p>
+                            <p class="service-description">Ensamblaje personalizado de computadoras según tus necesidades. Equipos gaming, oficina o trabajo especializado. Seleccionamos los mejores componentes para tu presupuesto.</p>
                             <span class="class-price">Desde $50</span>
                         </div>
                     </div>
@@ -251,31 +271,31 @@
                         <img src="images/class/cardio-class.jpg" class="img-fluid" alt="Instalación">
                         <div class="class-info">
                             <h3 class="mb-1">Instalación</h3>
-                            <span><strong>Especialista</strong> - Equipo RSolutions</span>
-                            <p class="mt-3">Instalación de software, sistemas operativos, redes y periféricos. Configuración optimizada para máximo rendimiento.</p>
+                            <p class="service-specialist"><strong>Especialista:</strong> Equipo RSolutions</p>
+                            <p class="service-description">Instalación de software, sistemas operativos, redes y periféricos. Configuración optimizada para máximo rendimiento. Soporte técnico completo para tu infraestructura.</p>
                             <span class="class-price">Desde $30</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Servicios adicionales -->
-                <div class="col-lg-6 col-md-6 col-12 mt-5" data-aos="fade-up" data-aos-delay="700">
+                <div class="col-lg-6 col-md-6 col-12 mt-4" data-aos="fade-up" data-aos-delay="700">
                     <div class="class-thumb">
                         <div class="class-info">
                             <h3 class="mb-1">Asesoría Técnica</h3>
-                            <span><strong>Especialista</strong> - Equipo RSolutions</span>
-                            <p class="mt-3">Consultoría especializada para optimizar tu infraestructura tecnológica. Análisis de necesidades y recomendaciones personalizadas.</p>
+                            <p class="service-specialist"><strong>Especialista:</strong> Equipo RSolutions</p>
+                            <p class="service-description">Consultoría especializada para optimizar tu infraestructura tecnológica. Análisis de necesidades y recomendaciones personalizadas. Te ayudamos a tomar las mejores decisiones tecnológicas.</p>
                             <span class="class-price">Desde $15/hora</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-12 mt-5" data-aos="fade-up" data-aos-delay="800">
+                <div class="col-lg-6 col-md-6 col-12 mt-4" data-aos="fade-up" data-aos-delay="800">
                     <div class="class-thumb">
                         <div class="class-info">
                             <h3 class="mb-1">Accesorios y Componentes</h3>
-                            <span><strong>Disponible</strong> - En tienda y online</span>
-                            <p class="mt-3">Venta de componentes de computadora de alta calidad: tarjetas gráficas, procesadores, memorias RAM, discos duros y periféricos.</p>
+                            <p class="service-specialist"><strong>Disponible:</strong> En tienda y online</p>
+                            <p class="service-description">Venta de componentes de computadora de alta calidad: tarjetas gráficas, procesadores, memorias RAM, discos duros y periféricos. Garantía en todos nuestros productos.</p>
                             <span class="class-price">Variados precios</span>
                         </div>
                     </div>
